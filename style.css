@@ -64,7 +64,7 @@ h1 {
 
 .product-container {
     max-width: 1300px;
-    background-color: #FFF4D6;
+    background-color: #ffffff;
     flex-basis: 100px;
     flex-grow: 6;
     padding: 50px;
@@ -81,17 +81,21 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
+
 
 .product-card {
-    background-color: beige;
+   
     width: 350px;
-    height: 300px;
-    border: 1px solid;
-    margin: 5px;
+    border: 2px solid pink;
+    margin: 10px;
+    padding-bottom: 50px;
 }
+.image {
+    width: 350px;
 
+}
 
 /* Inicio de footer*/
 footer {

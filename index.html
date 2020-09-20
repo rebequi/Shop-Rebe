@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roller Skate Store</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
@@ -48,20 +49,87 @@
                 </div>
             </div>
 
-            <div class = "search">
+            <div class="search">
                 <h3>Búsqueda</h3><input type="text" name="" id="">
             </div>
 
-            <div class = "categories">
+            <div class="categories">
                 <h3>Categorías</h3>
                 <form>
-                    <label> 
-                        <input type="checkbox"> Inline Skates
-                        <input type="checkbox"> Quad Roller Skates
-                        <input type="checkbox"> Figure Skates
-                        <input type="checkbox"> Accesorios
-                        <input type="checkbox"> Inline Skates
+
+                    <label>
+                        <input type="checkbox" name="filter-categories"> Skates
                     </label>
+                    <label>
+                        <input type="checkbox" name="filter-categories" checked> Roller Skates
+                    </label>
+                    <label>
+                        <input type="checkbox" name="filter-categories">Figure Skates
+                     </label>
+                    <label>
+                        <input type="checkbox" name="filter-categories">Accesorios 
+                    </label>
+                    <label>
+                        <input type="checkbox" name="filter-categories"> Todos
+                    </label>
+
+                </form>
+            </div>
+
+            <div class="rating">
+                <h3>Puntaje</h3>
+                <form>
+                    <label for ="rating">
+                        <input type="checkbox" name="filter-rating" checked> 
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="filter-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="filter-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="filter-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fal fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="filter-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </label>
+
+                  
+                        
+
+
+                    
                 </form>
             </div>
 
@@ -89,55 +157,109 @@
             <div class="product-list">
 
                 <div class="product-card">
-                    <p>producto</p>
-                </div>
-                <div class="product-card">
-                    <p>producto</p>
-                </div>
 
-                <div class="product-card">
-                    <p>producto</p>
-                </div>
+                    <img class="image" src="./img/Jackson-Ice-Skates.jpg">
 
-                <div class="product-card">
-                    <p>producto</p>
-                </div>
 
-                <div class="product-card">
-                    <p>producto</p>
+                    <div>
+                        Jackson Figure Ice Skates
+                        $62
+                    </div>
                 </div>
-
                 <div class="product-card">
-                    <p>producto</p>
+                    <img class="image" src="./img/Impala Quad Skate White.jpg">
+
+
+                    <div>
+                        Impala Squad Skate White
+                        $94.95 USD
+                    </div>
                 </div>
 
                 <div class="product-card">
-                    <p>producto</p>
+                    <img class="image" src="./img/Rookie-Bubblegum-Roller-Skates.jpg">
+
+
+                    <div>
+                        Rookie Bubblegum Roller Skates
+                        $99.95
+                    </div>
                 </div>
 
                 <div class="product-card">
-                    <p>producto</p>
+                    <img class="image" src="./img/Moxi Lolly Skate.jpg">
+
+
+                    <div>
+                        Moxi Lolly Skate
+                        $299.00
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="image" src="./img/Impala Quad Skate Holographic.jpg">
+
+
+                    <div>
+                        IMPALA QUAD SKATE - HOLOGRAPHIC
+                        $99.95 USD
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="image" src="./img/G.H-Ice-Inline-Skates.jpg">
+
+
+                    <div>
+                        G.H Off Ice Inline Skates
+                        $350.00
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="image" src="./img/Helmet-RollerSkatin.jpg">
+
+
+                    <div>
+                        Casco
+                        $45.00
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img class="image" src="./img/set-proteccion.jpg">
+
+
+                    <div>
+                        Set de Proteccion
+                        $17.99
+                    </div>
                 </div>
 
 
                 <div class="product-card">
-                    <p>producto</p>
-                </div>
-                <div class="product-card">
-                    <p>producto</p>
+                    <img class="image" src="./img/Rio-Moonlight-Ice-Skates.jpg" <div>
+                    RIO MOONLIGHT ICE SKATES
+                    $100
                 </div>
 
-                <div class="product-card">
-                    <p>producto</p>
-                </div>
 
                 <div class="product-card">
-                    <p>producto</p>
+                    <img class="image" src="./img/impala-inline-skates.jfif">
+    
+    
+                    <div>
+                        IMPALA INLINE SKATES
+                        $99.95
+                    </div>
                 </div>
-
-
-
+    
             </div>
+          
+
+
+
+        </div>
 
         </div>
 
