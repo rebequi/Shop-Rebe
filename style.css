@@ -1,49 +1,99 @@
 
+/* Inicio de tipgrafías */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-
-* {
-    margin: 0;
+/* Final de tipgrafías */
+* {    margin: 0;
+    
 }
 
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Inicio de Header */
+ 
 .principal-header {
-    background-color: blueviolet;
+    background-color:#EEF5FC ;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-container-image {
-    background-color: rgb(129, 129, 255);
-    height: 20vh;
+.header-text {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.headercontainer-image {
+    background: url(./img/RollerSkateShop.png);
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 h1 {
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 40px;
-    color: rgb(255, 187, 60);
-}
-
-section {
-    height: 100vh;
-    display: flex;
-    
-}
-
-.filter {
-    background-color: yellow;
- 
-}
-
-.products {
-    background-color: thistle;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    color: rgb(255, 236, 199);
    
 }
 
+/* Inicio de seccion principal */
+
+.main-section {
+    background-color: blue;
+    display: flex;
+  
+}
+
+.filter-container {
+    
+    background-color:rgb(255, 230, 230);
+    flex-basis: 100px;
+    flex-grow: 1;
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    
+}
+
+.product-container {
+    max-width: 1300px;
+    background-color: #FFF4D6;
+    flex-basis: 100px;
+    flex-grow: 6;
+    padding: 50px;
+    
+   
+}
+
+.item-view {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.product-card {
+    background-color: beige;
+    width: 350px;
+    height: 300px;
+    border: 1px solid;
+    margin: 5px;
+}
+
+
+/* Inicio de footer*/
 footer {
     background-color: violet;
     height: 20vh;
