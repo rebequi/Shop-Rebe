@@ -119,7 +119,6 @@ const somethingWrittenOnTheInput = () => {
 filterBySearch.oninput = () => {
     productCardsFilter()
 
-
 }
 
 for (let checkboxCategory of filterByCategory) {
