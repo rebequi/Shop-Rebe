@@ -37,7 +37,7 @@
         <div class="headercontainer-image">
 
             <div>
-                <h1 class="principal-title">Roller Skate Store</h1>
+                <h1 class="principal-title">ROLLER SKATE STORE</h1>
             </div>
 
         </div>
@@ -67,7 +67,11 @@
             </div>
 
             <div class="search">
-                <h3>Búsqueda</h3><label><input type="text" name="" id=""></label>
+                <h3>BÚSQUEDA</h3>
+
+                <label>
+                    <input type="text" class="search-bar" name="look-for" id="search-bar" placeholder="Buscar productos">
+                </label>
 
             </div>
 
@@ -76,29 +80,30 @@
                 <form>
                     <div class="filter-checkbox">
                         <label>
-                            <input type="checkbox" name="filter-categories"> Skates
+                            <input type="checkbox" class="checkbox-category" value="Ruedas" name="filter-categories" > Ruedas
                         </label>
                     </div>
 
 
                     <div class="filter-checkbox">
                         <label>
-                            <input type="checkbox" name="filter-categories" checked> Roller Skates
+                            <input type="checkbox" class="checkbox-category" value="Roller Skates" name="filter-categories"> Roller Skates
                         </label>
                     </div>
                     <div class="filter-checkbox">
                         <label>
-                            <input type="checkbox" name="filter-categories">Figure Skates
+                            <input type="checkbox" class="checkbox-category" value="Figure Skates" name="filter-categories" >Figure Skates
                         </label>
 
                     </div>
                     <div class="filter-checkbox">
                         <label>
-                            <input type="checkbox" name="filter-categories">Accesorios
+                            <input type="checkbox" class="checkbox-category" value="Accesorios" name="filter-categories" >Accesorios
                         </label>
                     </div>
-                    <div class="filter-checkbox"> <label>
-                            <input type="checkbox" name="filter-categories"> Todos
+                    <div class="filter-checkbox">
+                         <label>
+                            <input type="checkbox" class="checkbox-category" value="Profesional" name="filter-categories"> Profesionales
                         </label>
                     </div>
 
@@ -112,62 +117,62 @@
                     <div class="review">
 
                         <label for="rating">
-                            <input type="checkbox" name="filter-rating" checked>
+                            <input type="checkbox" class="checkbox-review" value="1" name="filter-rating" data-review="1">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <div>5</div>
+                            5
                     </div>
 
                     <div class="review">
                         <label>
-                            <input type="checkbox" name="filter-rating">
+                            <input type="checkbox" class="checkbox-review" value="2" name="filter-rating" data-review="2">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
-                            <div>4</div>
+                            4
                         </label>
                     </div>
 
                     <div class="review">
                         <label>
-                            <input type="checkbox" name="filter-rating">
+                            <input type="checkbox" class="checkbox-review" value="3" name="filter-rating" data-review="3">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
-                            <div>3</div>
+                            3
 
                         </label>
                     </div>
 
                     <div class="review">
                         <label>
-                            <input type="checkbox" name="filter-rating">
+                            <input type="checkbox" class="checkbox-review" value="4" name="filter-rating" data-review="4">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
-                            <div>2</div>
+                            2
                         </label>
                     </div>
 
 
                     <div class="review">
                         <label>
-                            <input type="checkbox" name="filter-rating">
+                            <input type="checkbox" class="checkbox-review" value="5" name="filter-rating" data-review="5">
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
-                            <div>1</div>
+                            1
                         </label>
 
 
@@ -199,10 +204,19 @@
 
             <div class="product-list">
 
-                <div class="product-card">
+                <div class="product-card" 
+                    data-nombre="Jackson Figure Ice Skates" 
+                    data-category="Figure Skates"
+                    data-price="62" 
+                    data-review="3">
 
-                    <img class="image" src="./img/Jackson-Ice-Skates.jpg">
+                    <div class="article-image-container">
+                        <img class="image" src="./img/Jackson-Ice-Skates.jpg">
+                        <div class="overlay-for-product"> gfdgfdgfd</div>
 
+                    </div>
+
+                   
 
 
                     <div class="article-tittle">
@@ -213,7 +227,7 @@
 
                     <div class="article-price">
 
-                        <p class="article-price">$62 USD</p>
+                        <p class="article-price">$62</p>
 
                     </div>
 
@@ -235,8 +249,18 @@
 
 
                 </div>
-                <div class="product-card">
-                    <img class="image" src="./img/Impala Quad Skate White.jpg">
+                <div class="product-card"
+                data-nombre="Impala Squad Skate" 
+                data-category="Figure Skates"
+                data-price="94.95" 
+                data-review="4">
+
+                    <div class="article-image-container">
+                        <img class="image" src="./img/Impala Quad Skate White.jpg">
+                    </div>
+
+                    
+                   
 
 
 
@@ -248,7 +272,7 @@
 
                     <div class="article-price">
 
-                        <p class="article-price">$94.95 USD</p>
+                        <p class="article-price">$94.95</p>
 
                     </div>
 
@@ -269,15 +293,23 @@
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <img class="image" src="./img/Rookie-Bubblegum-Roller-Skates.jpg">
+                <div class="product-card"
+                data-nombre="Moxi Wheel" 
+                data-category="Ruedas"
+                data-price="20" 
+                data-review="5">
+
+                    <div class="article-image-container">
+                        <img class="image" src="./img/rueda.png">
+                    </div>
+                    
 
                     <div class="article-tittle">
-                        <h3> Moxi Lolly Skate</h3>
+                        <h3> Moxi Wheel</h3>
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$99.95 USD</p>
+                        <p class="article-price">$20</p>
                     </div>
 
                     <div class="article-rating">
@@ -296,23 +328,30 @@
 
                 </div>
 
-                <div class="product-card">
-                    <img class="image" src="./img/Moxi Lolly Skate.jpg">
+                <div class="product-card"
+                data-nombre="Profesional Skates" 
+                data-category="Profesional"
+                data-price="299" 
+                data-review="3">
+                    <div class="article-image-container">
+                        <img class="image" src="./img/profesionales.jpg">
+                    </div>
+                   
 
                     <div class="article-tittle">
-                        <h3>Rookie Roller Skates</h3>
+                        <h3>Profesional Skates</h3>
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$299.00 USD</p>
+                        <p class="article-price">$299</p>
                     </div>
 
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
 
                     <div class="card-button">
@@ -321,16 +360,23 @@
 
                 </div>
 
-                <div class="product-card">
-                    <img class="image" src="./img/Impala Quad Skate Holographic.jpg">
+                <div class="product-card"
+                data-nombre="Impala Skates Holographic" 
+                data-category="Roller Skates"
+                data-price="99.95" 
+                data-review="5">
+                    <div class="article-image-container">
+                        <img class="image" src="./img/Impala Quad Skate Holographic.jpg">
 
+                    </div>
+                    
 
                     <div class="article-tittle">
                         <h3>Impala Skates Holographic</h3>
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$99.95 USD</p>
+                        <p class="article-price">$99.95</p>
                     </div>
 
                     <div class="article-rating">
@@ -348,8 +394,16 @@
 
                 </div>
 
-                <div class="product-card">
-                    <img class="image" src="./img/G.H-Ice-Inline-Skates.jpg">
+                <div class="product-card"
+                data-nombre="G.H Off Ice Inline Skates" 
+                data-category="Figure Skates"
+                data-price="150" 
+                data-review="1">
+
+                    <div class="article-image-container">
+                        <img class="image" src="./img/G.H-Ice-Inline-Skates.jpg">
+                    </div>
+                    
 
 
                     <div class="article-tittle">
@@ -357,15 +411,15 @@
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$350.00 USD</p>
+                        <p class="article-price">$150.00</p>
                     </div>
 
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
 
                     <div class="card-button">
@@ -374,23 +428,30 @@
 
                 </div>
 
-                <div class="product-card">
-                    <img class="image" src="./img/Helmet-RollerSkatin.jpg">
+                <div class="product-card"
+                data-nombre="casco" 
+                data-category="Accesorios"
+                data-price="45" 
+                data-review="3">
+                    <div class="article-image-container">
+                        <img class="image" src="./img/Helmet-RollerSkatin.jpg">
+                    </div>
+                    
 
                     <div class="article-tittle">
                         <h3>Casco</h3>
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$45.00 USD</p>
+                        <p class="article-price">$45.00</p>
                     </div>
 
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
 
                     <div class="card-button">
@@ -399,9 +460,16 @@
 
                 </div>
 
-                <div class="product-card">
+                <div class="product-card"
+                data-nombre="set de Proteccion" 
+                data-category="Accesorios"
+                data-price="17.99" 
+                data-review="2">
+                    <div class="article-image-container">
+                        <img class="image" src="./img/set-proteccion.jpg">
+                    </div>
 
-                    <img class="image" src="./img/set-proteccion.jpg">
+                  
 
 
 
@@ -410,15 +478,15 @@
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$17.99 USD</p>
+                        <p class="article-price">$17.99</p>
                     </div>
 
                     <div class="article-rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
 
                     <div class="card-button">
@@ -427,16 +495,23 @@
                 </div>
 
 
-                <div class="product-card">
-                    <img class="image" src="./img/Rio-Moonlight-Ice-Skates.jpg">
+                <div class="product-card"
+                data-nombre="Rio Moonlight Ice Skates" 
+                data-category="Figure Skates"
+                data-price="99.99" 
+                data-review="4">
+                    <div class="article-image-container">
+                        <img class="image" src="./img/Rio-Moonlight-Ice-Skates.jpg">
+                    </div>
+                    
 
 
                     <div class="article-tittle">
-                        <h3>RIO MOONLIGHT ICE SKATES</h3>
+                        <h3>Rio Moonlight Ice Skates</h3>
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$99.99 USD</p>
+                        <p class="article-price">$99.99</p>
                     </div>
 
                     <div class="article-rating">
@@ -444,7 +519,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
 
                     <div class="card-button">
@@ -454,16 +529,23 @@
                 </div>
 
 
-                <div class="product-card">
-                    <img class="image" src="./img/impala-inline-skates.jfif">
+                <div class="product-card"
+                data-nombre="Impala Inline Skates" 
+                data-category="Roller Skates"
+                data-price="99.99" 
+                data-review="4">
+                    <div class="article-image-container">
+                        <img class="image" src="./img/impala-inline-skates.jfif">
+                    </div>
+
 
 
                     <div class="article-tittle">
-                        <h3>IMPALA INLINE SKATES</h3>
+                        <h3>Impala Inline Skates</h3>
                     </div>
 
                     <div class="article-price">
-                        <p class="article-price">$99.99 USD</p>
+                        <p class="article-price">$99.99</p>
                     </div>
 
                     <div class="article-rating">
@@ -471,7 +553,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
 
                     <div class="card-button">
@@ -505,59 +587,74 @@
     <!-- =================== Inicio del Carrito =============== -->
 
 
-    <div class="overlay hidden" id="overlay">
+    <div class="overlay hidden" id="overlay"> </div>
 
-        <div class="menu-cart" id="menu">
+    <div class="menu-cart" id="menu">
 
-            <div class="cart-header">
+        <div class="cart-header">
 
-                <div class="cart-main-text">
-                    <h1>Carrito</h1>
-
-                </div>
-
-                <div class="close-cart" id="close-cart">
-                    <i class="fas fa-times"></i>
-                </div>
+            <div class="cart-main-text">
+                <h1>Carrito</h1>
 
             </div>
 
-            <div class="quantity-items">
-                <p>2 productos agregado(s)</p>
+            <div class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
             </div>
 
-            <div class="cart-items-container">
+        </div>
 
-                <div class="cart-item">
+        <div class="quantity-items">
+            <p>2 productos agregado(s)</p>
+        </div>
 
+        <div class="cart-items-container">
+
+            <div class="cart-item">
+
+                <div class="cart-item-image">
                     <img class="cart-image" src="./img/Impala Quad Skate Holographic.jpg">
+                </div>
 
+                <div class="cart-item-description">
+                    <div class="cart-item-tittle">
+                        <h3>Impala Skate Holographic</h3>
+                    </div>
 
+                    <div class="remove-item-cart" id="remove-item-cart">
+                        <i class="far fa-trash-alt"></i>
+                    </div>
                 </div>
 
 
 
+
+
             </div>
+
 
 
         </div>
+
 
     </div>
 
+
+
     <!-- =================== FINAL del Carrito =============== -->
 
-        <!-- =================== INICIO formulario de compra =============== -->
-        <div class="overlay hidden">
+    <!-- =================== INICIO formulario de compra =============== -->
+    <div class="overlay hidden">
 
-            <div class="shopping-form">
+        <section class="shopping-form">
 
 
-            </div>
+        </section>
 
-        </div>
-     
+    </div>
 
-         <!-- =================== final formulario de compra =============== -->
+
+    <!-- =================== final formulario de compra =============== -->
 
 
     <!-- =================== Link a js =============== -->

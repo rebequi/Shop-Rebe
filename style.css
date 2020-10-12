@@ -1,7 +1,7 @@
 
 /* Inicio de tipgrafías */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 
 /* Final de tipgrafías */
@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Inicio de Header */
@@ -41,7 +42,7 @@ body {
 
 .headercontainer-image {
     background: url(./img/RollerSkateShop.png);
-    height: 60vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +50,7 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
+    font-size: 35px;
     color: rgb(255, 236, 199);
    
 }
@@ -87,6 +88,22 @@ h1 {
 h2 {
     font-size: 18px;
    
+}
+
+.search {
+ margin-top: 20px;
+}
+
+.search-bar {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: 10px;
+    border-bottom: solid rgb(247, 162, 211) 3px;
+    background-color: rgb(252, 241, 255);
+}
+
+.search-bar::placeholder {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .filter-checkbox {
@@ -150,21 +167,45 @@ h2 {
     width: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
     background-color: #ffffff;
-    margin: 10px;
+    margin: 20px;
     padding: 20px;
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    
 }
+
+.article-image-container {
+    position: relative;
+}
+
 .image {
-    height: 300px;
-    margin-bottom: 50px;
+    height: 250px;
+    margin:50px;
+    overflow: hidden;
+   
+   
+}
+
+
+.image:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
 
 }
 
-.article-tittle {
+.overlay-for-product {
+    background-color: rgba(255, 0, 255, 0.199);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.article-tittle > h3 {
+    font-size: 16px;
    
 }
 
@@ -216,16 +257,27 @@ footer {
     top: 0;
     right: 0;
     
-    
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 .menu-cart {
     
     height: 100vh;
-    background-color: rgb(251, 242, 255);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
     right: 0;
-    
+    z-index: 2;
+    transform: translateX(600px);
+    transition: 1s;
+  
+}
+
+.show-menu {
+    transform: translate(0);
+
 }
 
 .cart-header {
@@ -236,11 +288,27 @@ footer {
 
 .cart-main-text > h1 {
     font-size: 30px;
-    color: mediumblue;
+    color: rgb(0, 0, 0);
+}
+
+.cart-items-container{
+    overflow: scroll;
+    
+}
+
+.cart-item {
+    display: flex;
+    margin: 50px;
 }
 
 .cart-image {
-    height: 150px;
+    height: 120px;
+}
+
+.remove-item-cart {
+    position: absolute;
+    right: 50px;
+
 }
 
 .hidden {
@@ -260,5 +328,8 @@ footer {
     width: 500px;
     background-color: #fafafa;
     border-radius: 10px;
-    
+    z-index: 2;
+    position: relative;
+
 }
+
