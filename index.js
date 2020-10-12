@@ -117,10 +117,7 @@ const somethingWrittenOnTheInput = () => {
 }
 
 filterBySearch.oninput = () => {
-    // productCardsFilter()
-    for (let singleProductCard of allProductCards) {
-        console.log(compareInputWithSingleCard(singleProductCard))
-    }
+    productCardsFilter()
 
 
 }
