@@ -41,11 +41,28 @@ const filterBySearch = document.querySelector("#search-bar")
 const allProductCards = document.querySelectorAll(".product-card")
 
 
+ // ------------ > aqui empieza a filtrar por nombre
+
+const passForFilterInput =(singleProductCard) => {
+      
+
+       if (somethingWrittenOnTheInput()) {
+        if (compareInputWithSingleCard(singleProductCard)) {
+            return true
+        }
+        else {
+            return false
+        }
+    }
+    else {
+        return true
+    }
+
+}
 
 
-
-
-const passForFilter =(singleProductCard)=>{
+ // ------------ > aqui empieza a filtrar por categorias
+const passForFilterCategory =(singleProductCard) => {
 
     if (someCheckboxIsCheckedForCategory()){
         if (compareCategoryWithSingleCard(singleProductCard)) {
@@ -61,41 +78,57 @@ const passForFilter =(singleProductCard)=>{
         return true
     }
     
-    }
-    
 
-//     if (someCheckboxIsCheckedForReview()) {
-//         if (compareReviewWithSingleCard(singleProductCard)){
-//             return true
+}
 
-//         }
-//         else {
-//             return false
-//         }
+// ------------ > aqui empieza a filtrar por review
+const passForFilterReview = (singleProductCard) => {
+    if (someCheckboxIsCheckedForReview()) {
+        if (compareReviewWithSingleCard(singleProductCard)){
+            return true
+
+        }
+        else {
+            return false
+        }
         
-//     }
-//     else {
-//         return true
-//     }
-// }
-    
-//     if (somethingWrittenOnTheInput()) {
-//         if (compareInputWithSingleCard(singleProductCard)) {
-//             return true
-//         }
-//         else {
-//             return false
-//         }
-//     }
-//     else {
-//         return true
-//     }
-// }
+    }
+    else {
+        return true
+    }
+
+
+}
+
+
+// ---------------> Aqui empiezo a filtrar la tarjeta
+
+
+const passForFilter =(singleProductCard)=>{
+if (passForFilterInput(singleProductCard) && passForFilterReview (singleProductCard) && passForFilterCategory(singleProductCard)) {
+    return true
+}
+else {
+    return false
+}
+
+ 
+}
+
+// ------------ > comparo lo escrito en el input con tarjeta 
+const compareInputWithSingleCard = (singleProductCard) => {
+    if (singleProductCard.dataset.nombre.includes(filterBySearch.value.toLowerCase())) {
+        return true
+    }
+    else {
+        return false
+    }
+
+}
 
 
 
-
-
+// ------------ > comparo la categoria con tarjeta 
 
 const compareCategoryWithSingleCard = (singleProductCard) => {
     for (let checkboxCategory of filterByCategory){
@@ -109,16 +142,19 @@ const compareCategoryWithSingleCard = (singleProductCard) => {
 
 }
 
-// const compareReviewWithSingleCard =(singleProductCard) => {
-//     for (let checkboxReview of filterByReview) {
-//         if (checkboxReview.checked) {
-//             if (checkboxReview.value === singleProductCard.dataset.review){
-//                 return true 
-//             }
-//         }
-//     }
-//     return false
-// }
+
+// ------------ > comparo el "review" con tarjeta 
+
+const compareReviewWithSingleCard =(singleProductCard) => {
+    for (let checkboxReview of filterByReview) {
+        if (checkboxReview.checked) {
+            if (checkboxReview.value === singleProductCard.dataset.review){
+                return true 
+            }
+        }
+    }
+    return false
+}
 
 
 const hideCard = (singleProductCard) => {
@@ -141,15 +177,7 @@ const productCardsFilter = () => {
     }
 }
 
-const compareInputWithSingleCard = (singleProductCard) => {
-    if (singleProductCard.dataset.nombre.includes(filterBySearch.value.toLowerCase())) {
-        return true
-    }
-    else {
-        return false
-    }
 
-}
 
 
 const someCheckboxIsCheckedForCategory = () => {
