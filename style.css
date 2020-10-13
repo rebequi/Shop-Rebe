@@ -73,7 +73,6 @@ h1 {
     display: flex;
     padding: 50px;
     flex-direction: column;
-    flex-basis: 700px;
     font-size: 12px;
   
     

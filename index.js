@@ -42,17 +42,81 @@ const allProductCards = document.querySelectorAll(".product-card")
 
 
 
+
+
+
 const passForFilter =(singleProductCard)=>{
-    if (somethingWrittenOnTheInput()) {
-        if (compareInputWithSingleCard(singleProductCard)) {
+
+
+    if (someCheckboxIsCheckedForReview()) {
+        if (compareReviewWithSingleCard(singleProductCard)){
             return true
+
         }
         else {
             return false
         }
+        
     }
     else {
         return true
+    }
+    
+//     if (somethingWrittenOnTheInput()) {
+//         if (compareInputWithSingleCard(singleProductCard)) {
+//             return true
+//         }
+//         else {
+//             return false
+//         }
+//     }
+//     else {
+//         return true
+//     }
+// }
+
+
+
+// if (someCheckboxIsCheckedForCategory()){
+//     if (compareCategoryWithSingleCard(singleProductCard)) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+ 
+// }
+
+// else {
+//     return true
+// }
+
+
+
+// si descomento el else anterior el codigo que sigue no funciona 
+
+
+
+const compareCategoryWithSingleCard = (singleProductCard) => {
+    for (let checkboxCategory of filterByCategory){
+        if (checkboxCategory.checked) {
+            if (checkboxCategory.value === singleProductCard.dataset.category){
+                return true
+            }
+ 
+        }
+    }
+    return false
+
+}
+
+const compareReviewWithSingleCard =(singleProductCard) => {
+    for (let checkboxReview of filterByReview) {
+        if (checkboxReview.checked) {
+            if (checkboxReview.value === singleProductCard.datased.review){
+                return true 
+            }
+        }
     }
 }
 
@@ -137,5 +201,3 @@ for (let checkboxReview of filterByReview) {
     }
 
 }
-
-
