@@ -39,6 +39,11 @@ body {
     display: flex;
 }
 
+.shopping-cart-button:hover {
+    border: solid black 2px;
+    border-radius: 2px;
+   padding: 2px;
+}
 
 .headercontainer-image {
     background: url(./img/RollerSkateShop.png);
@@ -91,6 +96,7 @@ h2 {
 
 .search {
  margin-top: 20px;
+ 
 }
 
 .search-bar {
@@ -99,6 +105,15 @@ h2 {
     padding: 10px;
     border-bottom: solid rgb(247, 162, 211) 3px;
     background-color: rgb(252, 241, 255);
+    position: relative;
+    
+}
+
+.fas.fa-search {
+    position: absolute;
+    top: 555px;
+    left: 200px;
+
 }
 
 .search-bar::placeholder {
@@ -241,7 +256,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
 }
 
 
@@ -271,6 +285,7 @@ footer {
     z-index: 2;
     transform: translateX(600px);
     transition: 1s;
+    padding: 30px;
   
 }
 
@@ -297,9 +312,8 @@ footer {
 
 .cart-item {
     display: flex;
-    
     margin: 50px;
-    border-bottom: solid 1px rgba(189, 144, 248, 0.329);
+    border-bottom: solid 1px rgba(147, 84, 230, 0.486);
 }
 
 .cart-image {
@@ -326,11 +340,11 @@ footer {
 
 .remove-item-cart {
     position: absolute;
-    right: 50px;
+    right: 60px;
 
 }
 
-.cad-item-quantity {
+.car-item-quantity {
     display: flex;
 }
 
@@ -339,9 +353,37 @@ footer {
     display: none;
 }
 
+/* ----> botones del carrito */
 
+.buy-article>button{
+    width: 100%;
+    border: none;
+    background-color:#4CAF50;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
 
-/*  ============ final del carrito ============ */
+.empty-cart > button {
+    
+    width: 100%;
+    border: none;
+    border: solid red 1px;
+    border-radius: 5px;
+     padding: 20px;
+     margin-top: 30px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.empty-cart-button:hover {
+    background-color: red;
+    color: white;
+}
 
 
 /*  ============================ inicio del formulario de compra ============ */
@@ -352,7 +394,7 @@ footer {
     width: 500px;
     background-color: #fafafa;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 3;
     position: relative;
 
 }
