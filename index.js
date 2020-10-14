@@ -1,5 +1,8 @@
 
-// ==========    Inicio de los selectores ============= 
+// ==========    Inicio de los selectores DE CARRITO ============= 
+
+
+// ------------------>>>>
 
 const shoppingCartButton = document.getElementById("view-cart")
 const closeCartButton = document.getElementById("close-cart")
@@ -28,6 +31,18 @@ closeCartButton.onclick = () => {
     document.body.classList.remove("no-scroll")
     menuCart.classList.remove("show-menu")
 
+}
+
+
+//  ===============   Empiezan funciones para Modal de Checkout ===================
+
+// ----------->> Selectores de checkout
+
+const proceedToBuy = document.getElementById ("buy-article-button")
+
+// ----------->> funcion para abrir el modal de checkout
+proceedToBuy.onclick = () => {
+    overlay.classList.add ("hidden")
 }
 
 

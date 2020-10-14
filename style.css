@@ -392,10 +392,15 @@ footer {
 .shopping-form {
     height: 500px;
     width: 500px;
-    background-color: #fafafa;
+    background-color: #fdcccc;
     border-radius: 10px;
     z-index: 3;
     position: relative;
+    transform: translateX(600px);
 
+}
+
+.show-checkout {
+    transform: translate(0);
 }
 
