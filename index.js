@@ -215,16 +215,15 @@ filterBySearch.oninput = () => {
 
 for (let checkboxCategory of filterByCategory) {
     checkboxCategory.oninput = () => {
-        // productCardsFilter()
-        console.log(someCheckboxIsCheckedForCategory())
+        
+       productCardsFilter ()
     }
 
 }
 
 for (let checkboxReview of filterByReview) {
     checkboxReview.oninput = () => {
-        console.log(someCheckboxIsCheckedForReview())
-        //     productCardsFilter()
+      productCardsFilter()
 
     }
 

@@ -297,11 +297,31 @@ footer {
 
 .cart-item {
     display: flex;
+    
     margin: 50px;
+    border-bottom: solid 1px rgba(189, 144, 248, 0.329);
 }
 
 .cart-image {
     height: 120px;
+}
+
+.card-item-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-container {
+    display: flex;
+}
+
+.cart-item-quantity {
+    display: flex;
+}
+
+.product-qty {
+    width: 50px;
+    height: 30px;
 }
 
 .remove-item-cart {
@@ -309,6 +329,11 @@ footer {
     right: 50px;
 
 }
+
+.cad-item-quantity {
+    display: flex;
+}
+
 
 .hidden {
     display: none;
