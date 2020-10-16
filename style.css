@@ -406,9 +406,9 @@ footer {
 
 
 .shopping-form {
-    height: 100vh;
+    height: 80vh;
     width: 500px;
-    background-color: #fafafa;
+    background-color: #f8c4c4;
     padding: 20px;
     border-radius: 10px;
     position: absolute;
@@ -424,7 +424,7 @@ footer {
 
 .user-information-total {
     display: flex;
-    background-color: #fafafa;
+    background-color:  #f8c4c4;
 }
 
 .checkout-buttons {
