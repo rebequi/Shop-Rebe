@@ -7,6 +7,7 @@
     <title>Roller Skate Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -31,7 +32,6 @@
 
             </div>
 
-
         </div>
 
         <div class="headercontainer-image">
@@ -42,7 +42,6 @@
 
         </div>
     </header>
-
 
     <!-- =================== Final del Header  =============== -->
 
@@ -60,9 +59,7 @@
 
                 <div class="erase">
 
-
                     <p> <i class="fas fa-trash-alt"></i>Limpiar</p>
-
                 </div>
             </div>
 
@@ -74,12 +71,10 @@
                         placeholder="Buscar productos">
                 </label>
 
-                <div class ="search-icon">
+                <div class="search-icon">
                     <i class="fas fa-search" aria-hidden="true"></i>
 
                 </div>
-
-                
 
             </div>
 
@@ -92,7 +87,6 @@
                             Ruedas
                         </label>
                     </div>
-
 
                     <div class="filter-checkbox">
                         <label>
@@ -197,8 +191,6 @@
             </div>
 
 
-
-
         </aside>
 
         <!-- =================== Final de los Filtros =============== -->
@@ -212,9 +204,6 @@
             </div>
 
 
-
-
-
             <div class="product-list">
 
                 <div class="product-card" data-nombre="jackson figure ice skates" data-category="Figure Skates"
@@ -225,9 +214,6 @@
                         <div class="overlay-for-product"> gfdgfdgfd</div>
 
                     </div>
-
-
-
 
                     <div class="article-tittle">
                         <h3>Jackson Figure Ice Skates</h3>
@@ -243,7 +229,6 @@
 
                     <div class="article-rating">
 
-
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -257,7 +242,6 @@
                         <button class="button-add-to-cart">Comprar</button>
                     </div>
 
-
                 </div>
                 <div class="product-card" data-nombre="impala squad skate" data-category="Figure Skates"
                     data-price="94.95" data-review="4">
@@ -265,11 +249,6 @@
                     <div class="article-image-container">
                         <img class="image" src="./img/Impala Quad Skate White.jpg">
                     </div>
-
-
-
-
-
 
                     <div class="article-tittle">
                         <h3>Impala Squad Skate</h3>
@@ -284,7 +263,6 @@
                     </div>
 
                     <div class="article-rating">
-
 
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -338,7 +316,6 @@
                         <img class="image" src="./img/profesionales.jpg">
                     </div>
 
-
                     <div class="article-tittle">
                         <h3>Profesional Skates</h3>
                     </div>
@@ -368,7 +345,6 @@
 
                     </div>
 
-
                     <div class="article-tittle">
                         <h3>Impala Skates Holographic</h3>
                     </div>
@@ -389,7 +365,6 @@
                         <button class="button-add-to-cart">Comprar</button>
                     </div>
 
-
                 </div>
 
                 <div class="product-card" data-nombre="g.h off ice inline skates" data-category="Figure Skates"
@@ -398,8 +373,6 @@
                     <div class="article-image-container">
                         <img class="image" src="./img/G.H-Ice-Inline-Skates.jpg">
                     </div>
-
-
 
                     <div class="article-tittle">
                         <h3>G.H Off Ice Inline Skates</h3>
@@ -457,9 +430,6 @@
                     <div class="article-image-container">
                         <img class="image" src="./img/set-proteccion.jpg">
                     </div>
-
-
-
 
 
                     <div class="article-tittle">
@@ -546,9 +516,6 @@
                 </div>
 
             </div>
-
-
-
 
         </div>
 
@@ -664,7 +631,7 @@
                             <p>x$99.95</p>
                         </div>
                     </div>
-                    <!--  -->
+
 
 
                 </div>
@@ -676,7 +643,7 @@
 
         </div>
 
-        <div class ="proceed-to-checkout-buttons">
+        <div class="proceed-to-checkout-buttons">
 
             <div class="buy-article">
                 <button class="buy-article-button" id="buy-article-button">COMPRAR</button>
@@ -684,8 +651,8 @@
             </div>
 
             <div class="empty-cart">
-                <button class="empty-cart-button">VACIAR</button> 
-                
+                <button class="empty-cart-button">VACIAR</button>
+
             </div>
 
         </div>
@@ -698,16 +665,110 @@
     <!-- =================== FINAL del Carrito =============== -->
 
     <!-- =================== INICIO formulario de compra =============== -->
-    <div class="overlay hidden" id="overlay"> </div>
 
 
-    <section class="shopping-form">
+    <div class="overlay-checkout hidden" id="overlay-checkout">
+
+        <section id="checkout-menu" class="shopping-form">
+
+            <div class="user-information-total">
+
+                <div class="info-user">
+                    <div class="checkout-tittle">
+                        <h2> Checkout</h2>
+                    </div>
+
+                    <div class="info-user-mail-payment">
+                        <div class="tittle-user">
+                            <h3>
+                                Datos Personales
+                            </h3>
+                        </div>
+                        <div class= "info-inputs">
+
+                            <div class="user-name-info">
+
+                                <input type="text" id="user-name">
+
+                            </div>
+
+                            <div class="user-email">
+                                <input type="email" id ="user-email">
+                            </div>
+
+                                   
+                        </div>
+                        
+                    </div>
+
+                    <div class="payment-options">
+
+                        <h3>Opciones de Pago</h3>
+
+                        <div class="payment-options-inputs">
+
+                            <div class="payment-input">
+                                <label for ="payment"><input type="radio">Efectivo / Debito</label> 
+                            </div>
+                            <div class="payment-input">
+                                <label for ="payment"><input type="radio"> Tarjeta de credito</label> 
+                            </div>
+                            <div class="payment-checkbox">
+                                <label for ="payment"><input type="checkbox"> Necesito envío</label> 
+                            </div>
+                            <div class="payment-checkbox">
+                                <label for ="payment"><input type="checkbox"> Tengo tarjeta de descuento</label> 
+                            </div>
+                            
+                            
+
+                        </div>
 
 
 
-    </section>
+                    </div>
+
+                </div>
+
+                <div class ="total-checkout">
+
+                    <div class="summary-text">
+                        <h2>Resumen</h2>
+                    </div>
+
+                    <div class="summary-container">
+
+                    </div>
 
 
+                </div>
+               
+            </div>
+
+            <div class ="checkout-buttons">
+                <div class="close-checkout" id="close-checkout">
+                    <button class="close-button">
+                        SEGUIR COMPRANDO
+                    </button>
+                </div>
+
+                <div class="end-checkout" id="end-checkout">
+                    <button class="end-button">
+                        FINALIZAR
+                    </button>
+                </div>
+    
+    
+
+
+            </div>
+
+
+
+        
+        </section>
+
+    </div>
 
 
     <!-- =================== final formulario de compra =============== -->
@@ -720,4 +781,3 @@
 </body>
 
 </html>
-

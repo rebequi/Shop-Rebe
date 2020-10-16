@@ -38,11 +38,20 @@ closeCartButton.onclick = () => {
 
 // ----------->> Selectores de checkout
 
-const proceedToBuy = document.getElementById ("buy-article-button")
+const proceedToBuyButton = document.getElementById ("buy-article-button")
+const checkoutMenu = document.getElementById ("checkout-menu")
+const closeCheckout = document.getElementById ("close-checkout")
+const overlayCheckout = document.getElementById("overlay-checkout")
+
 
 // ----------->> funcion para abrir el modal de checkout
-proceedToBuy.onclick = () => {
-    overlay.classList.add ("hidden")
+proceedToBuyButton.onclick =()=> {
+    overlayCheckout.classList.remove("hidden")
+}
+// ----------->> funcion para abrir el modal de checkout
+
+closeCheckout.onclick =()=>{
+    overlayCheckout.classList.add ("hidden")
 }
 
 
