@@ -283,3 +283,107 @@ productSpecification.classList.remove ("hidden")
 }
 
 
+// ==========    Fin de VISTAS: lista o grilla ============= 
+
+// ==========    Inicio de los selectores de CHECKOUT============= 
+
+const subtotal = document.querySelector (".subtotal-value")
+const charge = document.querySelector (".charge-value")
+const discount = document.querySelector (".discount-value")
+const delivery = document.querySelector (".delivery-value")
+const total = document.querySelector (".total-value")
+
+
+const paymentForm = document.querySelectorAll (".payment-form")
+
+// --------------inputs del checkout >>
+const debitOrCash = document.querySelector ("#efectivo")
+const credit = document.querySelector ("#credit")
+const deliveryFee = document.querySelector ("#delivery")
+const discountFee = document.querySelector ("#discount")
+
+
+let subTotalofOrder = Number(subtotal.dataset.price)
+
+subtotal.textContent = 194.9
+
+for (let option of paymentForm) {
+    option.oninput = () => {
+        totalAmount ()
+    }
+}
+
+// compra con tarjeta de credito
+
+let priceCharge
+
+const cardCharge =()=>{
+    priceCharge = subTotalofOrder * 0.1
+    charge.textContent = priceCharge
+    return priceCharge
+
+}
+
+// quiere envio
+
+let priceDelivery
+
+const deliveryCharge = () => {
+    priceDelivery = 10
+    delivery.textContent = priceDelivery
+    return priceDelivery
+}
+
+// tiene descuento
+
+let priceDiscount
+
+const hasDiscount = () => {
+    priceDiscount = subTotalofOrder * 0.1
+    discount.textContent = priceDiscount
+    return priceDiscount
+}
+
+// calculo total
+
+
+const totalAmount= () = {
+    if (credit.checked) {
+        priceCharge = cardCharge()
+    }
+    else {
+        priceCharge = 0
+        charge.textContent = priceCharge
+    }
+
+
+}
+
+
+// const calculoTotal = () => {
+
+//     if (credito.checked) {
+//         precioRecargo = cargoTarjeta()
+
+//     } else {
+//         precioRecargo = 0
+//         recargo.textContent = precioRecargo
+//     }
+//     if (envioSiNo.checked) {
+//         precioEnvio = cargoEnvio()
+//     } else {
+//         precioEnvio = 0
+//         envio.textContent = precioEnvio
+
+//     }
+//     if (tarjetaDescuento.checked) {
+//         precioDescuento = agregoDescuento()
+//     } else {
+//         precioDescuento = 0
+//         descuento.textContent = precioDescuento
+//     }
+
+//     let totalTodo = subtotalCompra + precioEnvio + precioRecargo + precioDescuento
+//     total.textContent = totalTodo
+//     return totalTodo
+// }
