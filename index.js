@@ -360,30 +360,3 @@ const totalAmount= () = {
 }
 
 
-// const calculoTotal = () => {
-
-//     if (credito.checked) {
-//         precioRecargo = cargoTarjeta()
-
-//     } else {
-//         precioRecargo = 0
-//         recargo.textContent = precioRecargo
-//     }
-//     if (envioSiNo.checked) {
-//         precioEnvio = cargoEnvio()
-//     } else {
-//         precioEnvio = 0
-//         envio.textContent = precioEnvio
-
-//     }
-//     if (tarjetaDescuento.checked) {
-//         precioDescuento = agregoDescuento()
-//     } else {
-//         precioDescuento = 0
-//         descuento.textContent = precioDescuento
-//     }
-
-//     let totalTodo = subtotalCompra + precioEnvio + precioRecargo + precioDescuento
-//     total.textContent = totalTodo
-//     return totalTodo
-// }
