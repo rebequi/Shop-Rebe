@@ -69,7 +69,6 @@ const allProductCards = document.querySelectorAll(".product-card")
 
 const passForFilterInput =(singleProductCard) => {
       
-
        if (somethingWrittenOnTheInput()) {
         if (compareInputWithSingleCard(singleProductCard)) {
             return true
@@ -101,7 +100,7 @@ const passForFilterCategory =(singleProductCard) => {
     else {
         return true
     }
-    
+   
 
 }
 
@@ -121,9 +120,7 @@ const passForFilterReview = (singleProductCard) => {
         return true
     }
 
-
 }
-
 
 // ---------------> Aqui empiezo a filtrar la tarjeta
 
@@ -149,7 +146,6 @@ const compareInputWithSingleCard = (singleProductCard) => {
     }
 
 }
-
 
 
 // ------------ > comparo la categoria con tarjeta 
@@ -252,3 +248,38 @@ for (let checkboxReview of filterByReview) {
     }
 
 }
+
+
+
+// ==========    Inicio de los selectores de VISTAS: lista o grilla ============= 
+
+const buttonGrid = document.getElementById("grid")
+const buttonList = document.getElementById ("list")
+const containerOfProduct = document.querySelector (".product-list")
+
+
+// ------------ > empiezo funcion para vista de grilla
+
+buttonGrid.onclick = () => {
+    for (let singleProductCard of allProductCards){
+        singleProductCard.classList.add ("product-card")
+        singleProductCard.classList.remove ("view-as-list")
+        let productSpecification = singleProductCard.querySelector(".product-specification")
+        productSpecification.classList.add ("hidden")
+        
+    }
+}
+
+// ------------ > empiezo funcion para vista de lista
+
+buttonList.onclick = () => {
+    for (let singleProductCard of allProductCards) {
+singleProductCard.classList.add("view-as-list")
+singleProductCard.classList.remove("product-card")
+let productSpecification = singleProductCard.querySelector(".product-specification")
+productSpecification.classList.remove ("hidden")
+
+    }
+}
+
+
