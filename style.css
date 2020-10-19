@@ -28,6 +28,13 @@ body {
 .header-text, .shopping-cart-button{
     margin-left: 100px;
     margin-right: 100px;
+    display: flex;
+}
+
+.fa-skating {
+    color: rgb(170, 105, 207);
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 

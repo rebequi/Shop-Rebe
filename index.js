@@ -298,7 +298,7 @@ const paymentForm = document.querySelectorAll (".payment-form")
 
 // --------------inputs del checkout >>
 const debitOrCash = document.querySelector ("#efectivo")
-const credit = document.querySelector ("#credit")
+const credit = document.getElementById ("credit-card")
 const deliveryFee = document.querySelector ("#delivery")
 const discountFee = document.querySelector ("#discount")
 
@@ -339,15 +339,14 @@ const deliveryCharge = () => {
 let priceDiscount
 
 const hasDiscount = () => {
-    priceDiscount = subTotalofOrder * 0.1
+    priceDiscount = -subTotalofOrder * 0.1
     discount.textContent = priceDiscount
     return priceDiscount
 }
 
 // calculo total
 
-
-const totalAmount= () = {
+const totalAmount = () => {
     if (credit.checked) {
         priceCharge = cardCharge()
     }
@@ -355,8 +354,28 @@ const totalAmount= () = {
         priceCharge = 0
         charge.textContent = priceCharge
     }
+    if (deliveryFee.checked) {
+        priceDelivery = deliveryCharge ()
+        
+    }
+    else {
+        priceDelivery = 0
+        delivery.textContent = priceDelivery
+    }
 
+    if (discountFee.checked) {
+        priceDiscount = hasDiscount()
+    }
+    else {
+        priceDiscount = 0
+        discount.textContent +priceDiscount
+    }
+
+    let totalAmountOrder = subTotalofOrder + priceDelivery + priceCharge + priceDiscount
+    total.textContent = totalAmountOrder
+    return totalAmountOrder
 
 }
+
 
 
